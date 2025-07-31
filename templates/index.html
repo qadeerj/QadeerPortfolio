@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Qadeer | Data Scientist Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Muhammad Qadeer</div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://github.com/qadeerj" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><button id="theme-toggle" class="theme-toggle"><i class="fas fa-moon"></i></button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Data Scientist</h1>
+                <p>Transforming complex data into actionable insights</p>
+                <div class="skills-badges">
+                    <span class="badge">Machine Learning</span>
+                    <span class="badge">Deep Learning</span>
+                    <span class="badge">Computer Vision</span>
+                    <span class="badge">NLP</span>
+                    <span class="badge">Data Analysis</span>
+                    <span class="badge">Python</span>
+                    <span class="badge">PowerBI</span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down">
+            <i class="fas fa-arrow-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="profile-image">
+                    <img src="{{ url_for('static', filename='images/profile.jpeg') }}" alt="Muhammad Qadeer">
+                </div>
+                <div class="about-text">
+                    <h3>Muhammad Qadeer</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Faislabad, Pakistan</p>
+                        <p><i class="fas fa-envelope"></i> qadeer559559@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> (92) 346-6279589</p>
+                    </div>
+                    <p class="bio">
+                        Motivated Data Scientist with expertise in machine learning, deep learning, and computer vision. 
+                        I excel in designing, developing, and deploying high-performance models and innovative AI solutions. 
+                        I aim to leverage my technical skills and problem-solving abilities in a dynamic environment to drive 
+                        impactful business outcomes.
+                    </p>
+                    <a href="/generate_resume" class="btn btn-primary">
+                        <i class="fas fa-file-alt"></i> Download Resume <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="skills-section">
+                <h3>Key Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h4>Data Analysis</h4>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%"></div>
+                        </div>
+                        <p>90%</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Machine Learning</h4>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%"></div>
+                        </div>
+                        <p>85%</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Deep Learning</h4>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%"></div>
+                        </div>
+                        <p>80%</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Data Visualization</h4>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%"></div>
+                        </div>
+                        <p>90%</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Python</h4>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%"></div>
+                        </div>
+                        <p>85%</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>SQL</h4>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%"></div>
+                        </div>
+                        <p>75%</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>Computer Vision</h4>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%"></div>
+                        </div>
+                        <p>80%</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>NLP</h4>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%"></div>
+                        </div>
+                        <p>75%</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4>PowerBI</h4>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%"></div>
+                        </div>
+                        <p>85%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2>Professional Experience</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Autism Spectrum Disorder Detector</h3>
+                        <p class="timeline-date">Final Year Project | December 2024 — August 2025</p>
+                        <p>
+                            Developed a deep learning model using CNN to classify ASD alongside localization.
+                            Used TensorFlow, PyTorch, Nibabel, and Tools like FSL to build an efficient system.
+                            Achieved high accuracy of 72% by preprocessing and augmenting 3D/4D image data.
+                            Deployed the model using Flask for an interactive web interface.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>American Sign Language Detection System</h3>
+                        <p class="timeline-date">Project | March 2025 — April 2025</p>
+                        <p>
+                            Developed a deep learning model using Random Forest to recognize ASL alphabets from hand gesture images.
+                            Used TensorFlow and OpenCV for real-time detection through webcam.
+                            Achieved high accuracy by preprocessing and augmenting image data.
+                            Deployed the model using Streamlit for an interactive web interface.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Banking Chatbot</h3>
+                        <p class="timeline-date">Project | October 2024 — November 2024</p>
+                        <p>
+                            Built an intelligent chatbot using Natural Language Processing (NLP) techniques in Python.
+                            Trained the model to answer banking-related queries like balance inquiry and transaction history.
+                            Used spaCy, NLTK, and custom intent classification for improved understanding.
+                            Deployed using Flask with a clean front-end UI for easy customer interaction.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2>Education</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="education-grid">
+                <div class="education-column">
+                    <h3>Academic Background</h3>
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-content">
+                            <h4>Bachelor of Data Science</h4>
+                            <p>The GIFT University, Gujranwala | 2021-2025</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-column">
+                    <h3>Certifications</h3>
+                    <div class="certifications">
+                        <ul>
+                            <li>Certificate of Achievement, 1st Position in Semester Fall 2025</li>
+                            <li>Data Analytics and Business Intelligence By DigiSkills.Pk</li>
+                            <li>WordPress By DigiSkills.PK</li>
+                            <li>Introduction to Large Language Models by Coursera</li>
+                            <li>Freelancing By DigiSkills.PK</li>
+                        </ul>
+                    </div>
+                    <h3>Languages</h3>
+                    <div class="languages">
+                        <div class="language">
+                            <p>English</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="language">
+                            <p>Urdu</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="language">
+                            <p>Punjabi</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projects</h2>
+                <div class="underline"></div>
+                <p>Here are some of my key projects that showcase my skills in data science and software development.</p>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+                <button class="filter-btn" data-filter="deep-learning">Deep Learning</button>
+                <button class="filter-btn" data-filter="nlp">NLP</button>
+                <button class="filter-btn" data-filter="computer-vision">Computer Vision</button>
+                <button class="filter-btn" data-filter="data-viz">Data Visualization</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-categories="deep-learning computer-vision">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1508780709619-79562169bc64?q=80&w=2000" alt="American Sign Language Detector">
+                    </div>
+                    <div class="project-content">
+                        <h3>American Sign Language Detector</h3>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">Deep Learning</span>
+                        </div>
+                        <p>Deep learning model that recognizes American Sign Language gestures in real-time using computer vision techniques.</p>
+                        <a href="https://github.com/qadeerj/ASL-Detector" target="_blank" class="btn btn-sm">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card" data-categories="machine-learning nlp">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2000" alt="Banking Chatbot with NLP">
+                    </div>
+                    <div class="project-content">
+                        <h3>Banking Chatbot with NLP</h3>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Flask</span>
+                        </div>
+                        <p>Intelligent chatbot for banking services using natural language processing to understand and respond to customer queries.</p>
+                        <a href="https://github.com/qadeerj/Banking-Chatbot" target="_blank" class="btn btn-sm">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card" data-categories="machine-learning">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=2000" alt="Movie Recommendation System">
+                    </div>
+                    <div class="project-content">
+                        <h3>Movie Recommendation System</h3>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Collaborative Filtering</span>
+                            <span class="tag">Streamlit</span>
+                        </div>
+                        <p>Collaborative filtering-based recommendation system that suggests movies based on user preferences and behavior.</p>
+                        <a href="https://github.com/qadeerj/Movie-Recommender" target="_blank" class="btn btn-sm">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card" data-categories="deep-learning computer-vision">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?q=80&w=2000" alt="Autism Spectrum Disorder Detector">
+                    </div>
+                    <div class="project-content">
+                        <h3>Autism Spectrum Disorder Detector</h3>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">CNN</span>
+                            <span class="tag">Flask</span>
+                        </div>
+                        <p>Deep learning model using CNN to classify ASD alongside localization with high accuracy.</p>
+                        <a href="https://github.com/qadeerj/ASD-Detector" target="_blank" class="btn btn-sm">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card" data-categories="data-viz">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=2000" alt="Stock Market Analysis Dashboard">
+                    </div>
+                    <div class="project-content">
+                        <h3>Stock Market Analysis Dashboard</h3>
+                        <div class="project-tags">
+                            <span class="tag">PowerBI</span>
+                            <span class="tag">Data Visualization</span>
+                            <span class="tag">Analytics</span>
+                        </div>
+                        <p>Interactive stock market dashboard using Power BI for real-time data visualization with dynamic calculations and KPIs.</p>
+                        <a href="https://github.com/qadeerj/Stock-Dashboard" target="_blank" class="btn btn-sm">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="https://github.com/qadeerj?tab=repositories" target="_blank" class="btn btn-outline btn-lg">
+                    View All Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Me</h2>
+                <div class="underline"></div>
+                <p>Have a question or want to work together? Feel free to reach out!</p>
+            </div>
+            <div class="contact-form-container">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/qadeerj" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/qadeerjutt" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:qadeer559559@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; <span id="current-year"></span> Muhammad Qadeer. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle"></i>
+            <div class="toast-message">Message sent successfully!</div>
+        </div>
+        <div class="toast-progress"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
